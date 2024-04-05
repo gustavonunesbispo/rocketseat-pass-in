@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- font preconnect -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <!-- title -->
+  <title>Pass-in | NLW Unite</title>
+  <!-- favicon -->
+  <link rel="shortcut icon" href="./assets/nlw-icon.svg" type="image/x-icon">
+  <!-- style.css -->
+  <link rel="stylesheet" href="./style.css">
+  <!-- font -->
+  <link
+    href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+    rel="stylesheet">
+  <!-- main.js -->
+  <script src="./main.js" defer></script>
+  <!-- js cnd -->
+  <script src="https://cdn.jsdelivr.net/npm/dayjs@1/dayjs.min.js"></script>
+
+  <script src="https://cdn.jsdelivr.net/npm/dayjs@1/dayjs.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/dayjs@1/plugin/relativeTime.js"></script>
+  <script>dayjs.extend(window.dayjs_plugin_relativeTime)</script>
+
+  <script src="https://cdn.jsdelivr.net/npm/dayjs@1/locale/pt-br.js"></script>
+  <script>dayjs.locale('pt-br')</script>
+</head>
+
+<body>
+  <main>
+    <section class="icon-section">
+      <img src="./assets/nlw-icon.svg" alt="">
+    </section>
+
+    <section class="form-section">
+      <form onsubmit="addParticipant(event)">
+        <fieldset>
+          <legend>Inscrição</legend>
+          <section class="fieldset-itens">
+            <div class="input-wrapper">
+              <img src="./assets/user-icon.svg" alt="">
+              <input type="text" placeholder="Nome Completo" name="name" required>
+            </div>
+            <div class="input-wrapper">
+              <img src="./assets/email-icon.svg" alt="">
+              <input type="email" placeholder="E-mail" name="email" required>
+            </div>
+            <button id="submitButton">Realizar Inscrição</button>
+          </section>
+        </fieldset>
+      </form>
+    </section>
+
+    <section class="participants-section">
+      <h1>Participantes</h1>
+      <div class="table-wrapper">
+        <table>
+          <thead>
+            <tr>
+              <th>Participante</th>
+              <th>Data da inscrição</th>
+              <th>Data do check-in</th>
+            </tr>
+          </thead>
+          <tbody></tbody>
+        </table>
+      </div>
+    </section>
+  </main>
+</body>
+
+</html>
